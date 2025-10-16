@@ -36,6 +36,17 @@ Author by: 汪袁烁
 
 之前我们说过，`decode`和`prefill`往往被视为两个阶段，这样往往造成负载不均，并且在面临长文本序列的输入时容易花费较长时间。而“Continuous batching”（连续批处理）则允许 请求 随时加入 / 离开 运行的 batch，而不是在 prompt 阶段与生成阶段严格分割、或者说先把所有 prompt 全部处理完才开始生成。也就是说批次是“动态流式”的，而不是静态预先构造。
 
+## motivation
+
+### 关于token延迟
+
+![](./images/05%20TokenLatency.png)
+
+我们知道，对于输入的多个句子我们会对其叠成batch然后输入，维度为[batchsize, seq_len]。那么在一次完整的前向传播（prefill + decode）中，究竟什么对于每个token平均生成延迟影响大呢。
+
+该实验的图可以清晰的看到，叠的batch的形状对平均生成
+
+
 ## DeepSpeed-FastGen
 
 DeepSpeed-FastGen 的目标是利用连续批处理和非连续 KV 缓存技术，以提升数据中心服务大型语言模型（LLM）的硬件利用率和响应速度。
