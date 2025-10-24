@@ -1,6 +1,8 @@
 <!--Copyright © ZOMI 适用于[License](https://github.com/Infrasys-AI/AIInfra)版权许可-->
 
-# 04.大模型训练与 AI Infra
+# 04.大模型训练与 AI Infra(DONE)
+
+> Author by: ZOMI
 
 当斯坦福大学《2025 年人工智能指数报告》披露谷歌 Gemini 1.0 Ultra 的训练成本高达 1.92 亿美元，而同期 GPT-3.5 级系统推理成本两年内骤降 280 倍时，AI 技术迭代背后，是 AI 基础设施（AI Infra）与大模型训练的深度绑定。
 
@@ -197,7 +199,7 @@ AI Infra 是 “硬件 - 系统软件 - 工具链” 的多层架构，每一层
 
 对研究者与工程师而言，理解二者协同逻辑，是把握 AI 技术方向的关键。唯有持续推动 AI Infra 创新与生态建设——如突破光子计算瓶颈、完善跨平台标准化、构建全球算力协同网络，才能充分释放大模型潜力，推动 AI 从 “技术突破” 走向 “产业普惠”。
 
-## 参考文献
+## 参考与引用
 
 1. Shoeybi, M., et al. (2021). Megatron-LM: Training multi-billion parameter language models using model parallelism. *arXiv preprint arXiv:1909.08053*.
 2. Rajbhandari, S., et al. (2020). ZeRO: Memory optimization towards training trillion parameter models. *arXiv preprint arXiv:1910.02054*.
@@ -209,7 +211,3 @@ AI Infra 是 “硬件 - 系统软件 - 工具链” 的多层架构，每一层
 8. Du, J., et al. (2022). GLaM: Efficient scaling of language models with mixture-of-experts. *arXiv preprint arXiv:2112.06905*.
 9. Stanford University. (2025). *AI Index Report 2025*. Stanford HAI.
 10. Gartner. (2025). *AI Infrastructure: Technology Definition and Market Guide*. Gartner Research.
-
-## 视频
-
-> 这个内容还没有，非常希望您参与到这个开源项目中，B 站给 ZOMI 留言哦！
